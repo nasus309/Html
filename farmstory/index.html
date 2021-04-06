@@ -3,149 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>팜스토리::메인</title>
-    <style>
-        /* 초기화 */
-        *{
-            margin: 0;
-            padding: 0;
-            font : normal 12px '돋움체';
-        }
-
-        ul, ol {list-style :none;}
-        a {text-decoration: none;color: #111;}
-
-        #wrapper {
-            width: 980px;
-            height: auto;
-            border : 1px solid red;
-            margin: 0 auto;
-        }
-
-        /* 헤더영역 */
-        header{
-            width: 100%;
-            height: 142px;
-            background: url('./img/head_top_line.png') no-repeat;
-            position: relative;
-        }
-
-        header > .logo {
-            position: absolute;
-            left: 50%;
-            top: 26px;
-            margin-left: -95px;
-            /* transform: translateX(-50%); */
-
-        }
-
-        header > p {
-            float: right;
-            margin-top: 12px;
-        }
-        header > img {
-            /* float: right;
-            clear: right; */
-            position: absolute;
-            right: 0;
-            top: 56px;
-        }
-
-        header > .gnb {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 50px;
-        }
-        header > .gnb > li {
-            float: left;
-            width: 20%;
-            height: 100%;
-            background-image: url('./img/head_menu_line.png');
-            background-repeat: no-repeat;
-            background-position-y: -6px;
-        }
-        header > .gnb > li > a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            font-size: 0;
-            background-position: 0 6px;
-            background-repeat: no-repeat;
-        }
-
-        header > .gnb > li > a > img {
-            margin-left: 100px;
-            margin-top: -20px;
-        }
-
-        header > .gnb > li:nth-child(1) > a {background-image: url('./img/head_menu1.png');}
-        header > .gnb > li:nth-child(2) > a {background-image: url('./img/head_menu2.png');}
-        header > .gnb > li:nth-child(3) > a {background-image: url('./img/head_menu3.png');}
-        header > .gnb > li:nth-child(4) > a {background-image: url('./img/head_menu4.png');}
-        header > .gnb > li:nth-child(5) > a {background-image: url('./img/head_menu5.png');}
-
-        header > .gnb > li:nth-child(1) > a:hover {background-image: url('./img/head_menu1_ov.png');}
-        header > .gnb > li:nth-child(2) > a:hover {background-image: url('./img/head_menu2_ov.png');}
-        header > .gnb > li:nth-child(3) > a:hover {background-image: url('./img/head_menu3_ov.png');}
-        header > .gnb > li:nth-child(4) > a:hover {background-image: url('./img/head_menu4_ov.png');}
-        header > .gnb > li:nth-child(5) > a:hover {background-image: url('./img/head_menu5_ov.png');}
-
-        /* 메인영역 - 공통 */
-        main{
-            width: 100%;
-            height: auto;
-            border: 1px solid blue;
-            box-sizing: border-box;
-        }
-
-        main > div{
-            width: 100%;
-            margin-top: 10px;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        /* 메인영역 - 슬라이더 */
-        main > .slider {
-            height: 312px;
-        }
-        /* 메인영역 - 바로가기 배너*/
-        main > .banner {
-            height: 74px;
-        }
-        /* 메인영역 - 최신글 리스트*/
-        main > .latest {
-            height: 186px;
-        }
-        /* 메인영역 - 안내 */
-        main > .info{
-            height: 154px;
-        }
-        /* 푸터영역 */
-        footer{
-            width: 100%;
-            height: 120px;
-            border-top: 1px solid #d1cab2;
-            box-sizing: border-box;
-            margin-top: 10px;
-        }
-
-        footer > img {}
-        footer > p {
-            float: right;
-            margin-right: 26px;
-            margin-top: 16px;
-            font: normal 11px '돋움';
-            color: #585858;
-            line-height: 18px;
-        }
-        footer > p > span {
-            font-size: 11px;
-            font-family: 'Verdana';
-            color: #888;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div id="wrapper">
@@ -170,9 +28,119 @@
             </ul>
         </header>
         <main>
-            <div class="slider"></div>
-            <div class="banner"></div>
-            <div class="latest"></div>
+            <div class="slider">
+                <ul>
+                    <li><img src="./img/main_slide_img1.jpg" alt="슬라이더1"></li>
+                    <li><img src="./img/main_slide_img2.jpg" alt="슬라이더2"></li>
+                    <li><img src="./img/main_slide_img3.jpg" alt="슬라이더3"></li>
+                </ul>
+                <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리"/>
+                <div>
+                    <img src="./img/main_banner_txt.png" alt="GRAND OPEN"/>
+                    <img src="./img/main_banner_tit.png" alt="팜스토리 오픈 기념 30%할인 이벤트"/>
+                    <img src="./img/main_banner_img.png" alt="GRAND OPEN"/>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="./img/main_banner_sub1_tit.png" alt="오늘의 식단"/></a>
+                <a href="#"><img src="./img/main_banner_sub2_tit.png" alt="나도 요리사"/></a>
+            </div>
+            <div class="latest">
+                <div>
+                    <img src="./img/main_latest1_tit.png" alt="텃밭가꾸기"/>
+                    <img src="./img/main_latest1_img.jpg" alt="이미지"/>
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="./img/main_latest2_tit.png" alt="텃밭가꾸기"/>
+                    <img src="./img/main_latest2_img.jpg" alt="이미지"/>
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="./img/main_latest3_tit.png" alt="텃밭가꾸기"/>
+                    <img src="./img/main_latest3_img.jpg" alt="이미지"/>
+                    <table border="0">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
             <div class="info"></div>
         </main>
         <footer>
